@@ -30,9 +30,8 @@ function CorrerTiempo() {
 
 function DetenerTiempo() {}
 
-$(document).ready(function () {
-  $("#btnJugar").click(function () {
-    console.log("entroooooo!!");
-    CorrerTiempo();
-  });
+$("#btnJugar").click(function (e) {
+  e.preventDefault();
+  console.log("entroooooo!!");
+  CorrerTiempo();
 });
